@@ -1,0 +1,104 @@
+.heading{
+    font-family:cursive;
+    text-align: center;
+    background-color: black;
+    padding: 1%;
+}
+.marvel{
+    background-color: red;
+    color: white;
+    font-family:fantasy;
+    letter-spacing: 1px;
+    padding: 2px;
+    font-weight:300;
+    font-size: 2em;
+    text-decoration: none;
+    /* margin:5px; */
+}
+.superhero{
+    font-size: 2em;
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.searchbar{
+    width: 100%;
+}
+.card-img-top{
+    height:55%;
+}
+.card{
+    height:250px;
+}
+
+
+/* fav.html css */
+.txtFont{
+    font-family: cursive;
+    font-weight: bold;
+    /* margin-top: 5px; */
+    color: rgb(62, 104, 0);
+    text-shadow: -1px 1px 0 rgb(255, 254, 254),
+                          1px 1px 0 rgb(255, 255, 255),
+                         1px -1px 0 rgb(255, 255, 255),
+                        -1px -1px 0 rgb(255, 255, 255);
+}
+.favBackground{
+    height: 30px;
+    background-image: linear-gradient(to bottom,green,white);
+}
+
+/* fav heading css */
+.fheading{
+
+    font-family:cursive;
+    text-align: center;
+    background-color: black;
+    padding: 1%;
+}
+.fmarvel{
+    position:relative;
+    background-color: red;
+    color: white;
+    font-family:fantasy;
+    letter-spacing: 1px;
+    padding: 2px;
+    font-weight:300;
+    font-size: 2em;
+    margin-top:0;
+    text-decoration: none;
+}
+.fsuperhero{
+    position: relative;
+    font-size: 2em;
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fback-btn{
+    position: absolute;
+    margin-left:20px;
+    margin-top:20px
+} 
+* { box-sizing: border-box; }
+.h100{
+    min-height: 100vh;
+}
+/* superhero page css */
+#s-img{
+    border: 2px solid;
+    margin-bottom: 20px;
+}
+
+/* universal footer css */
+.footer{
+    height: 50px;
+    background-image: linear-gradient(to top,black 70%,white);
+    text-align: center;
+    color: white;
+}
+.footer > p{
+    margin-bottom: 1px;
+}
