@@ -1,13 +1,11 @@
+// fetching fav list from localStorage
 let fav = localStorage.getItem("favlist");
 if(fav!=null){
     fav = JSON.parse(fav);
     for(let i=0;i<fav.length;i++){
-        // let ts = + new Date();
         let pub = "be5d12f9f9e02d3103482450d7907ffe";
-        // let priv = "";
-        // let token = ts+pub;
-        // token = CryptoJS.MD5(token).toString();
         let request = new XMLHttpRequest();
+        // fetching fav list characters one by one
         let url = `https://gateway.marvel.com:443/v1/public/characters/`+fav[i]+`?apikey=`+pub;
         request.open(`GET`,url);
         request.send();
@@ -18,6 +16,7 @@ if(fav!=null){
             let arr = data.results;
             let list = document.getElementById('flist')
             for(let i=0;i<data.count;i++){
+                // creating and appending cards
                 let div = document.createElement('div');
                 div.classList.add('col-md-2');
                 div.classList.add('card');
@@ -62,10 +61,12 @@ function remove4rmfav(id){
     fav = JSON.parse(fav);
     for(let i=0;i<fav.length;i++){
         if(fav[i]==id){
+            // using splice method to alter the fav list
             fav.splice(i,1);
             break;
         }
     }
+    // updaing the fav list in localStorage
     localStorage.setItem("favlist",JSON.stringify(fav));
     window.alert("Removed from favorites");
     window.location.reload();
