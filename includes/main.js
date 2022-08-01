@@ -40,8 +40,8 @@ request.onload = () =>{
             btn.innerHTML="Add To Favorites"
             btn.id=arr[i].id;
             btn.onclick=()=>{add2fav(arr[i].id)};
-            img.onclick=()=>{window.location.href=`../superhero.html?`+arr[i].id}
-            h5.onclick=()=>{window.location.href=`../superhero.html?`+arr[i].id}
+            img.onclick=()=>{window.location.href=`./superhero.html?`+arr[i].id}
+            h5.onclick=()=>{window.location.href=`./superhero.html?`+arr[i].id}
             card.appendChild(btn);
 
             div.appendChild(card);
