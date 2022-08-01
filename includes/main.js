@@ -1,10 +1,11 @@
 let ts = + new Date();
 let pub = "be5d12f9f9e02d3103482450d7907ffe";
 let priv = "";
-let token = ts+pub;
-token = CryptoJS.MD5(token).toString();
+// let token = ts+priv+pub;
+// token = CryptoJS.MD5(token).toString();
+// console.log(token)
 let request = new XMLHttpRequest();
-let url = `https://gateway.marvel.com:443/v1/public/characters?ts=`+ts+`&apikey=`+pub+`&hash=`+token;
+let url = `https://gateway.marvel.com:443/v1/public/characters?apikey=`+pub;
 request.open(`GET`,url);
 request.send();
 request.onload = () =>{
