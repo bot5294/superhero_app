@@ -2,13 +2,13 @@ let fav = localStorage.getItem("favlist");
 if(fav!=null){
     fav = JSON.parse(fav);
     for(let i=0;i<fav.length;i++){
-        let ts = + new Date();
+        // let ts = + new Date();
         let pub = "be5d12f9f9e02d3103482450d7907ffe";
-        let priv = "";
-        let token = ts+pub;
-        token = CryptoJS.MD5(token).toString();
+        // let priv = "";
+        // let token = ts+pub;
+        // token = CryptoJS.MD5(token).toString();
         let request = new XMLHttpRequest();
-        let url = `https://gateway.marvel.com:443/v1/public/characters/`+fav[i]+`?ts=`+ts+`&apikey=`+pub+`&hash=`+token;
+        let url = `https://gateway.marvel.com:443/v1/public/characters/`+fav[i]+`?apikey=`+pub;
         request.open(`GET`,url);
         request.send();
         request.onload = () =>{
