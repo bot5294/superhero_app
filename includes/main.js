@@ -138,8 +138,8 @@ function searchHeroSearch(){
                         btn.onclick=()=>{add2fav(arr[i].id)};
                         // redirecting with id as url parameter to superhero page
                         // img and name are made clickable
-                        img.onclick=()=>{window.location.href=`../superhero.html?`+arr[i].id}
-                        h5.onclick=()=>{window.location.href=`../superhero.html?`+arr[i].id}
+                        img.onclick=()=>{window.location.href=`./superhero.html?`+arr[i].id}
+                        h5.onclick=()=>{window.location.href=`./superhero.html?`+arr[i].id}
                         card.appendChild(btn);
 
                         div.appendChild(card);
